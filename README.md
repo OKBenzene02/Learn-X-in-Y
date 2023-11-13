@@ -1,3 +1,7 @@
+Check out the video demo of the app
+
+https://github.com/OKBenzene02/Learn-X-in-Y/assets/71420395/85d48a20-2aee-490b-a519-a3f1de3494a8
+
 # Learn X in Y Mins/Days
 
 This is one stop app which integrates `ChatGPT GPT 3.5`, `PowerBI` and `LeetCode` to personalize your experience with getting effective studying experience and guidance. Using `ChatGPT` make a detailed guideline of steps to learn a programming language in Y Days. Clear your doubts in any programming language in Y Minutes. `ChatGPT` is tailored to provided comprehensive plans when prompted correctly. Use your `LeetCode Account` to analyze your performance by having an interactive dashboard experience. The dashboard uses `PowerBI API` to fetch the reports. This application comes with an additional features to make UI more friendly it includes `Tracker` and `Adding your own guides`. Use `Tracker` to make a breif task list and check where you stand. All the Guides created will be stored for future reference in the `Study Guide Section` additionally it also includes to add your own guides to the `Study Guide Section`.
