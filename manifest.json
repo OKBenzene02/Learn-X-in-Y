@@ -1,0 +1,23 @@
+{
+  "platform-version": "1.0",
+  "product": {
+    "surveysparrow": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "icon.svg"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [
+    "http://(.*).surveysparrow.test(.*)",
+  "https://(.*).surveysparrow.com(.*)",
+  "https://(.*).surveySparrow.com(.*)",
+  "https://api.openai.com/v1/chat/completions"
+  ],
+  "engines": {
+    "node": "18.13.0",
+    "ssdk": "0.1.5"
+  }
+}

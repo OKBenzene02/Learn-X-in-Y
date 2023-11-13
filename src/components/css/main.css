@@ -1,0 +1,381 @@
+/* ========================================================== Title Division ================================================================= */
+
+.title-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    height: 60vh;
+    background-color: #CEE7EA;
+    z-index: 10;
+}
+
+.title-content .title-main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.title-content .title-main .heading{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.title-content .title-main .heading span{
+    color: #56B0BB;
+}
+
+.title-content .title-main .heading-2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title-content .title-main .title-chatgpt button{
+    width: 7rem;
+    height: 3rem;
+    font-size: 17px;
+    background-color: #ffff;
+    border-radius: .375rem;
+    cursor: pointer;
+    border: 1px solid #56B0BB;
+    /* background-color: #56B0BB; */
+    color: #56B0BB;
+    font-weight: 600;
+    transition: background .1s ease-in-out;
+}
+
+.title-content .title-main .title-chatgpt button:hover{
+    background-color: #56afbb90;
+    color: #ffff;
+}
+
+/* ============================================================= Todo Container ============================================================= */
+
+.title-content .title-todo {
+    width: 28rem;
+    height: 20rem;
+    border: .5px solid #9b9b9b;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 7px 38px -3px rgba(159, 159, 159, 0.4);
+    z-index: 0;
+    background-color: #fff;
+}
+
+.title-content .title-todo .todo-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-content .title-todo .todo-container .todo-terminal-design{
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+    margin-bottom: 1rem;
+}
+
+.title-content .title-todo .todo-container .todo-terminal-design .red, 
+.title-content .title-todo .todo-container .todo-terminal-design .green, 
+.title-content .title-todo .todo-container .todo-terminal-design .yellow{
+    width: .55rem;
+    height: .55rem;
+    border-radius: 50%;
+    transition: background .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: .45rem;
+    background-position: center;
+}
+
+.title-content .title-todo .todo-container .todo-terminal-design .red{
+    background-color: red;
+}
+
+.title-content .title-todo .todo-container .todo-terminal-design .green{
+    background-color: rgb(21, 182, 21);
+}
+
+.title-content .title-todo .todo-container .todo-terminal-design .yellow{
+    background-color: rgb(226, 195, 20);
+}
+
+.title-content .title-todo .todo-container .todo-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title-content .title-todo .todo-container .todo-contents .todo-heading{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title-content .title-todo .todo-container .todo-contents .add-tasks{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.title-content .title-todo .todo-container .todo-contents .add-tasks button{
+    width: 7rem;
+    background-color: #ffff;
+    border-radius: .375rem;
+    cursor: pointer;
+    border: 1px solid #56B0BB;
+    /* background-color: #56B0BB; */
+    color: #56B0BB;
+    font-weight: 600;
+    transition: background .1s ease-in-out;
+}
+
+.title-content .title-todo .todo-container .todo-contents .add-tasks button:hover{
+    background-color: #56B0BB;
+    color: #ffff;
+}
+
+
+
+  /* ===================================================  Table contents Scrollable =================================================== */
+  .title-content .title-todo .todo-container .todo-contents .task-container {
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 10rem;
+  }
+  
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table {
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: .5rem;
+  }
+  
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table td,
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table th {
+    border: 1px solid #9b9b9b;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table td img{
+    width: 1rem;
+    cursor: pointer;
+  }
+  
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table tr {
+    transition: background .2s ease-in;
+  }
+ 
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table tr:nth-child(even) {
+    background-color: #e7e7e7;
+  }
+  
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table tr:hover {
+    background-color: #f6f6f6e1;
+  }
+
+  .title-content .title-todo .todo-container .todo-contents .task-container #task-table tr.done {
+    background-color: rgba(108, 232, 108, 0.489);  
+}
+
+    .title-content .title-todo .todo-container .todo-contents .task-container #task-table tr.done:hover {
+        background-color: rgba(108, 232, 108, 0.679);  
+    }
+
+    /* ===================================================  Guide contents =================================================== */
+
+.guide-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.guide-content .heading{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.guide-content .heading span{
+    color: #56B0BB;
+}
+
+.guide-content .guide-result{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.guide-content .guide-result .study-guide
+{
+    width: 15rem;
+    height: 5rem;
+    background-color: #56afbb22;
+    border: .02rem solid #56B0BB;
+    border-radius: .375rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 7px 38px -3px rgba(159, 159, 159, 0.4);
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out, scale .1s ease-out;
+}
+
+.guide-content .guide-result .study-guide:hover{
+    box-shadow: 0 7px 45px -10px rgba(84, 84, 84, 0.523);
+    background-color: #56afbb46;
+    scale: 1.03;
+}
+
+.guide-content .guide-result .guide-add{
+    width: 15rem;
+    height: 5rem;
+    background-color: #56afbb22;
+    border: .02rem solid #56B0BB;
+    color: #5d9da5;
+    border-radius: .375rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 600;
+    box-shadow: 0 7px 38px -3px rgba(159, 159, 159, 0.4);
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out, scale .1s ease-out;
+}
+
+.guide-content .guide-result .guide-add:hover{
+    box-shadow: 0 7px 45px -10px rgba(84, 84, 84, 0.523);
+    background-color: #56afbb46;
+    scale: 1.03;
+}
+    /* ===================================================  Custom Modal =================================================== */
+
+    .custom-modal {
+        /* Your styles for the modal */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        borderRadius: 5px;
+        width: 40vw;
+        height: 70vh;
+        border-radius: .1rem solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 3rem;
+      }
+
+      .custom-modal h2{
+        font-size: 25px;
+        font-weight: 800;
+      }
+
+      .custom-modal .label-1, .custom-modal .label-2{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 20px;
+        align-items: center;
+      }
+
+      .custom-modal .label-1 input[type=text]{
+        width: 100%;
+        height: 2.3rem;
+        padding: 1rem;
+        border-radius: .375rem;
+        border: 1px solid rgb(155, 155, 155);
+        font-size: 12px;
+      }
+
+      .custom-modal .label-2 textarea{
+        width: 100%;
+        min-height: 5rem;
+        max-height: 10rem;
+        padding: .5rem;
+        border-radius: .375rem;
+        border: 1px solid rgb(155, 155, 155);
+        font-size: 12px;
+      }
+
+      .custom-modal .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .custom-modal .buttons .modal-button-addChat, .custom-modal .buttons .modal-button-cancel{
+        width: 7rem;
+        height: 3rem;
+        background-color: #56B0BB;
+        color: #ffff;
+        border-radius: .375rem;
+        cursor: pointer;
+        border: 1px solid #56B0BB;
+        /* background-color: #56B0BB; */
+        font-weight: 600;
+        transition: background .1s ease-in-out;
+      }
+      
+      .custom-modal .buttons .modal-button-addChat:hover, .custom-modal .buttons .modal-button-cancel:hover{
+        
+        background-color: #ffff;
+        color: #56B0BB;
+    }
+      
+
+    /* ===================================================  Leetcode contents =================================================== */
+
+    .leetcode-content{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    .leetcode-content .heading{
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .leetcode-content .heading span{
+        color: #56B0BB;
+    }
+
+    .leetcode-content .heading-2{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .leetcode-content .heading-2 span{
+        color: #f68e33;
+    }
+
+    .leetcode-content .leetcode-dashboard{
+        width: 100%;
+        height: 120vh;
+        background-color: #e7e7e7;
+        background-image: url("../images/Liyakhat_Project.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }   
+
